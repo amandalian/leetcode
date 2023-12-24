@@ -4,6 +4,7 @@ Runtime: 85 ms [Beats 97.48% of users with Python3]
 Memory: 22.04 MB [Beats 10.19% of users with Python3]
 """
 
+
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         d = {}
@@ -13,4 +14,4 @@ class Solution:
             else:
                 d[num] = 1
 
-        return [i[0] for i in sorted(d.items(), key = lambda x: -x[1])[:k]]
+        return [i[0] for i in sorted(d.items(), key=lambda x: -x[1])[:k]]
