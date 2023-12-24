@@ -3,10 +3,12 @@ https://leetcode.com/problems/trapping-rain-water/submissions/1127299627
 Runtime: 109 ms [Beats 76.83% of users with Python3]
 Memory: 19.34 MB [Beats 6.12% of users with Python3]
 """
+
+
 class Solution:
     def trap(self, height: List[int]) -> int:
         max_left, max_right = 0, 0
-        p1, p2 = 0, len(height)-1
+        p1, p2 = 0, len(height) - 1
         units = 0
 
         while p1 < p2:
